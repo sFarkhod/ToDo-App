@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import ToDo from './components/To-Do';
+import { saveAllTodos } from './redux/action/action';
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const allT = JSON.parse(localStorage.getItem(`allTodo's`))
+    dispatch(saveAllTodos(allT))
+  }, []);
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <ToDo/>
     </div>
   );
 }

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.main-div {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+.name-project {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.input-addBtn {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+
+.input-addBtn button {
+    margin-left: 10px;
+    height: 38px !important;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.delete-s-item {
+    height: 35px;
+    margin-top: -7px;
+}
+
+.card-body {
+    height: 60px;
+}
+
+
+.line-through {
+    text-decoration-line: line-through;
+}
+
+.custom-edit {
+    margin-left: 160px !important;
+}
+
+.custom-p {
+    max-width: 70px;
+}
+
+.not_display {
+    display: none;
+}
+
+.display {
+    display: block;
+}
