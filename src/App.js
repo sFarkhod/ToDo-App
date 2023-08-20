@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const allT = JSON.parse(localStorage.getItem(`allTodo's`))
     dispatch(saveAllTodos(allT))
-  }, []);
+  }, [dispatch]);
 
   
 

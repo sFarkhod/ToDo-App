@@ -22,7 +22,7 @@ export default function Edit({ todoLists, showModal, onHide }) {
     onHide();
   };
 
-  const id = todoLists?.id;
+  // const id = todoLists?.id;
   const text = todoLists?.text;
 
   return (
