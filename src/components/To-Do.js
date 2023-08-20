@@ -25,7 +25,7 @@ export default function ToDo() {
 
     if (inputData.current.value.length > 0) {
       console.log('ishladi...')
-
+      console.log(uuidv4(), inputData.current.value,)
       dispatch(
         todoAction({
           id: uuidv4(),
@@ -33,7 +33,6 @@ export default function ToDo() {
           isDone: false,
         })
       );
-      console.log(inputData.current.value,)
       formRef.current.reset();
       toast.success("Item Added Successfully");
     } else {
