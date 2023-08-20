@@ -1,68 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 .main-div {
-    background: #fff;
-    max-width: 400px;
-    width: 100%;
-    margin: 120px auto;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .name-project {
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 2px;
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .input-addBtn {
-    margin: 20px 0;
-    width: 100%;
-    display: flex;
-    height: 45px;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
 }
 
 .input-addBtn button {
-    margin-left: 10px;
-    height: 38px !important;
+  margin-left: 10px;
+  height: 38px !important;
 }
 
 .footer {
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
-    align-items: center;
-    justify-content: space-between;   
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .delete-s-item {
-    height: 35px;
-    margin-top: -7px;
+  height: 35px;
+  margin-top: -7px;
 }
 
 .card-body {
-    height: 60px;
+  position: relative;
+  height: 60px;
 }
 
-
 .line-through {
-    text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 
 .custom-edit {
-    margin-left: 160px !important;
+  position: absolute;
+  right: 80px;
+  top: 34%;
+  /* margin-left: 160px !important; */
 }
 
 .custom-p {
-    max-width: 70px;
+  max-width: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .not_display {
-    display: none;
+  display: none;
 }
 
 .display {
-    display: block;
+  display: block;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: background-image 10s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customItems {
+  max-height: 200px; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+  /* Add custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #ffcc00 #1a1a1a;
+}
+
+.customItems::-webkit-scrollbar {
+  border-radius: 8px;
+  width: 8px;
+}
+
+.customItems::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 8px;
+}
+
+.customItems::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #1a1a1a, #333);
+}
+
+.TooltipCustom {
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+.customBackdrop {
+  opacity: 0.1 !important;
 }
