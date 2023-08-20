@@ -24,8 +24,6 @@ export default function ToDo() {
     e.preventDefault();
 
     if (inputData.current.value.length > 0) {
-      console.log('ishladi...')
-      console.log(uuidv4(), inputData.current.value,)
       dispatch(
         todoAction({
           id: uuidv4(),
